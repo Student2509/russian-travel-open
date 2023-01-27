@@ -1,0 +1,12 @@
+.place__paragraphs {
+  grid-area: paragraph;
+  margin: 0;
+  padding: 0;
+}
+
+/* точка 718px определена произвольно исходя из соответствия со стилями родетельских блоков */
+@media screen and (max-width: 718px) {
+  .place__paragraphs {
+    margin: 0 16px;
+  }
+}

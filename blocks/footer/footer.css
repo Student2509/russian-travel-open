@@ -1,0 +1,22 @@
+.footer {
+  width: calc(100% - 2*(48px));
+  margin: 92px 48px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    width: calc(100% - 2*(24px));
+    margin: 88px 24px 24px;
+  }
+}
+
+/* точка 718px определена произвольно исходя из соответствия с блоком places */
+@media screen and (max-width: 718px) {
+  .footer {
+    width: auto;
+    margin: 64px auto 24px 16px;
+    flex-direction: column;
+  }
+}

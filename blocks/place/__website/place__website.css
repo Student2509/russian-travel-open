@@ -1,0 +1,11 @@
+.place__website {
+  grid-area: website;
+  align-self: flex-end;
+}
+
+/* точка 718px определена произвольно исходя из соответствия со стилями родетельских блоков */
+@media screen and (max-width: 718px) {
+  .place__website {
+    margin: 0 16px;
+  }
+}

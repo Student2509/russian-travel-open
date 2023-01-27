@@ -1,0 +1,37 @@
+.cover {
+  width: 100%;
+  min-height: 200px;
+  margin: 92px 0 0;
+  position: relative;
+  /* opacity: 0.3; */
+}
+
+@media screen and (min-width: 1025px) {
+  .cover {
+    margin: 92px calc((100% - 1024px)/2) 0;
+    width: 1024px;
+  }
+}
+
+/* точка 1120px определена как 1024px + 48px + 48px. 
+От самых больших разрешений и до разрешения в 1120px блок будет иметь фиксированные боковые отступы в 48px.
+В диапазоне 1024px-1120px блок будет иметь фиксированную ширину в 1024px, а боковые отступы будут уменьшаться до нуля.
+При разрешениях в 1024px и ниже боковые отступы будут нулевыми. */
+@media screen and (min-width: 1120px) {
+  .cover {
+    margin: 92px 48px 0;
+    width: calc(100% - 96px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cover {
+    margin: 90px 0 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .cover {
+    margin: 66px 0 0;
+  }
+}

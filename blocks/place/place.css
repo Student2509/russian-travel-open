@@ -1,0 +1,42 @@
+.place {
+  width: 100%;
+  margin: 80px 0 0;
+  display: grid;
+  grid-template-columns: calc(50% - 24px) calc(50% - 8px);
+  grid-template-areas: 
+  "title website"
+  "picture paragraph";
+  gap: 48px 32px;
+}
+
+.place:first-of-type {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .place {
+    grid-template-columns: calc(50% - 32px) calc(50% - 8px);
+    gap: 48px 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .place {
+    grid-template-columns: calc(50% - 20px) calc(50% - 8px);
+    gap: 48px 28px;
+  }
+}
+
+/* точка 718px определена произвольно исходя из визуального поведения макета при уменьшении разрешения */
+@media screen and (max-width: 718px) {
+  .place {
+    margin: 50px 0 0;
+    gap: 32px 32px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "website"
+    "picture"
+    "paragraph";
+  }
+}
