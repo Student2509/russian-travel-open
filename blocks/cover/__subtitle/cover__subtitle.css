@@ -1,12 +1,13 @@
 .cover__subtitle {
-  width: 360px;
+  max-width: 360px;
+  position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   margin: 32px auto 0;
   padding: 0;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 @media screen and (max-width: 800px) {
@@ -18,9 +19,9 @@
 /* точка 600px определена из соответствия точки перехода блока cover__title */
 @media screen and (max-width: 600px) {
   .cover__subtitle {
-    width: 288px;
+    max-width: 288px;
     margin: 16px auto 0;
     font-size: 14px;
-    line-height: 16px; 
+    line-height: 16px;
   }
 }

@@ -10,9 +10,17 @@
   margin: 0;
 }
 
+@media screen and (max-width: 800px) {
+  .place__paragraph {
+      margin: 0 0 25px 0;
+      font-size: 16px;
+  }
+}
+
 /* точка 718px определена произвольно исходя из соответствия со стилями родетельских блоков */
 @media screen and (max-width: 718px) {
-    .place__paragraph {
-        margin: 0 0 25px 0;
-    }
+  .place__paragraph {
+      margin: 0 0 25px 0;
+      font-size: 16px;
   }
+}
