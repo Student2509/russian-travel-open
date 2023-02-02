@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 800px) {
   .cover__subtitle {
-    margin: 12px auto 0;
+    margin: 12px auto 0;  /* на макете верхний отступ от блока cover__subtitle составляет 12px. Он увеличивается до 32px на ширине экрана 1024 / 1280рx */
   }
 }
 
@@ -25,3 +25,10 @@
     line-height: 16px;
   }
 }
+
+/* @media screen and (max-width: 414px) {
+  .cover__subtitle {
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+} */

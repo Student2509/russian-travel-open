@@ -26,9 +26,16 @@
   }
 }
 
+/* точка 1048px определена исходя из соответствия боковых отступов блока places */
+@media screen and (max-width:718px) {
+  .photo-grid {
+    margin: 88px 16px 0;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .photo-grid {
     gap: 12px 12px;
-    margin: 0 16px;
+    margin: 64px 16px 0;
   }
 }
