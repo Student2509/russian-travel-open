@@ -11,11 +11,11 @@
 }
 
 /* точка 800px определена в соответствии с пороговым значением блока cover__subtitle, т.к там он меняет величину отступа */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .cover__title {
-    margin-top: 20px; /*  */
+    margin-top: 20px;
   }
-}
+} */
 
 /* точка 600px определена произвольно как 560px (ширина блока) + отступ в 20px с каждой стороны. */
 @media screen and (max-width: 600px) {
